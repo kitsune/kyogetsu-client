@@ -8,9 +8,11 @@ Gem::Specification.new do |s|
   s.email       = 'enloed@gmail.com'
   s.files       = ["lib/?"]
   #s.homepage    = ''
-  s.license       = 'None'
+  s.license       = 'MPL 2.0'
 
   #Runtime Gems
+  s.add_runtime_dependency('standalone_migrations')
+  s.add_runtime_dependency('nats')
   s.add_runtime_dependency('diffy')
 
   #Dev Gems
